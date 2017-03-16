@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alanflores.asynctaskapp.MainActivity">
+
+    <Button
+        android:id="@+id/button_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Iniciar"/>
+
+    <TextView
+        android:id="@+id/text_numero_lineas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/button_iniciar"
+        android:layout_toRightOf="@id/button_iniciar"
+        android:layout_marginLeft="15dp"
+        android:text="Lineas leidas :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_below="@id/button_iniciar"></WebView>
+
+</RelativeLayout>
